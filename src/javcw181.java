@@ -59,4 +59,20 @@ public class javcw181 {
 */
 
 //3
-
+import java.util.Scanner;
+public class javcw181 {
+    public static void main(String[] args) {
+        Scanner myscan =new Scanner(System.in);
+        int min= 3,n,j;
+        String st= myscan.nextLine();
+        int l= st.length();
+        if (l>min){for (n=0;n<l-1;n++){
+            for (j=3;j<l;n++){
+                if((n!=j)&&(n<j)){
+                String sub=st.substring(n ,j);
+                System.out.println(sub);
+            }}
+            System.out.println();
+        }}
+    }
+}
