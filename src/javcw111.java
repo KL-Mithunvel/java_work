@@ -93,8 +93,44 @@ public class javcw111 {
 */
 
 //8
+/*
+import java.util.Scanner;
 public class javcw111 {
     public static void main(String[] args) {
-
+    Scanner myscan=new Scanner(System.in);
+    int n1=myscan.nextInt(),n2=myscan.nextInt();
+    System.out.println("sum: "+ (n1+n2));
+    System.out.println("product: "+ (n1*n2));
     }
 }
+*/
+
+//9
+/*
+import java.util.Scanner;
+public class javcw111 {
+    public static void main(String[] args) {
+        Scanner myscan = new Scanner(System.in);
+        int n = myscan.nextInt();
+        int n1= myscan.nextInt();
+        System.out.println("input: "+n+"\t output:"+(n*n));
+        System.out.println("input: "+n1+"\t output:"+(n1*n1));
+    }
+}
+ */
+//10
+
+import java.util.Scanner;
+public class javcw111 {
+    public static void main(String[] args) {
+        Scanner myscan = new Scanner(System.in);
+        int n1= myscan.nextInt(),n2= myscan.nextInt(),n3= myscan.nextInt();
+        if ((n1==n2) && (n2==n3)){
+            System.out.println("all are equal");
+            }
+        else if ((n1==n2) || (n2==n3)||(n1==n3)){
+            System.out.println("2 numbers are equal");
+        }
+    }
+}
+
