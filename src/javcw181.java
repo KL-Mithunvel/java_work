@@ -20,7 +20,7 @@ public class javcw181 {
 
     }
 }
-*/
+
 
 //2
 /*
@@ -56,9 +56,10 @@ public class javcw181 {
 
     }
 }
-*/
 
+*/
 //3
+
 import java.util.Scanner;
 public class javcw181 {
     public static void main(String[] args) {
@@ -72,7 +73,7 @@ public class javcw181 {
                 String sub=st.substring(n ,j);
                 System.out.println(sub);
             }}
-            System.out.println();
+
         }}
     }
 }
