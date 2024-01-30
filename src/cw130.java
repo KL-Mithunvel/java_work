@@ -1,3 +1,5 @@
+//1
+/*
 import java.util.Scanner;
 public class cw130 {
     public static void main(String[] args) {
@@ -7,7 +9,7 @@ public class cw130 {
         Scanner myscan= new Scanner(System.in);
         for (int i=0;i<5;i++){
             System.out.print("city name");
-            city[i]=myscan.nextLine();
+            city[i] = myscan.next();
             for (int j = 0; j < 3; j++) {
                 System.out.print("tem");
                 temp[i][j]= myscan.nextInt();
@@ -31,6 +33,15 @@ public class cw130 {
             System.out.println(city[i]+"'s minimum temp is: "+min +"C° on "+ mini +"th day");
 
         }
+
+    }
+}
+*/
+
+import java.util.Scanner;
+public class cw130 {
+    public static void main(String[] args) {
+
 
     }
 }
