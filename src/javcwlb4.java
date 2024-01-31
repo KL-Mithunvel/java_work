@@ -24,6 +24,7 @@ public class javcwlb4 {
 }
 */
 //2
+/*
 import java.util.Scanner;
 public class javcwlb4 {
     public static void main(String[] args) {
@@ -48,7 +49,7 @@ public class javcwlb4 {
 
     }
 
-
+*/
 
 //3
 /*

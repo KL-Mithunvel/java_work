@@ -67,13 +67,11 @@ public class javcw181 {
         int min= 3,n,j;
         String st= myscan.nextLine();
         int l= st.length();
-        if (l>min){for (n=0;n<l-1;n++){
-            for (j=3;j<l;n++){
-                if((n!=j)&&(n<j)){
-                String sub=st.substring(n ,j);
+        if (l>min){
+            for (n=0;n<l-1;n++){
+                String sub=st.substring(n ,n+3);
                 System.out.println(sub);
-            }}
+            }
 
         }}
     }
-}
