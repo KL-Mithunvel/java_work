@@ -121,6 +121,9 @@ System.out.println(x);
 }else {System.out.println("Invalid marks");}
 
         }
+public int jih{
+
+}
 
 
 
