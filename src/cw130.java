@@ -98,36 +98,93 @@ int m1[]=new int[2];
 int m2[]=new int[2];
 int m3[]=new int[2];
 int age[]=new int[2];
+int sum[]=new int[2];
+int avg[]=new int [2];
+int gpa[]=new int [2];
+String grade []=new String[2];
 for (int i = 0; i < 2; i++) {
 regno[i] = myscan.nextInt();
 name[i] = myscan.next();
 age[i]=myscan.nextInt();
 m1[i]= myscan.nextInt();
 m2[i]= myscan.nextInt();
-m3[i]=myscan.nextInt();}
-if (m1[0]>0 && m2[0]>0&& m3[0]>0) {
+m3[i]=myscan.nextInt();
+
+if (m1[i]>0 && m2[i]>0&& m3[i]>0) {
 System.out.println("valid marks");
-Stud st1 = new Stud();
-st1.stud(name[0],regno[0],age[0],m1[0],m2[0],m3[0]);
-int x= st1.avg();
-System.out.println(x);
-}else {System.out.println("Invalid marks");}
+
+
+}else {System.out.println("Invalid marks");}}
 if (m1[1]>0 && m2[1]>0&& m3[1]>0) {
 System.out.println("valid marks");
 Stud st2 = new Stud();
 st2.stud(name[1],regno[1],age[1],m1[1],m2[1],m3[1]);
-int x= st2.avg();
-System.out.println(x);
+st2.disply();
 }else {System.out.println("Invalid marks");}
 
         }
-public int jih{
 
-}
 
 
 
 
  }
 
+/*import java.util.Scanner;
 
+
+public class cw130{
+public static void main(String[] args) {
+Scanner myscan=new Scanner(System.in);
+int regno[]=new int[2];
+String name[]=new String[2];
+int m1[]=new int[2];
+int m2[]=new int[2];
+int m3[]=new int[2];
+int age[]=new int[2];
+int sum[]=new int[2];
+int avg[]=new int [2];
+int gpa[]=new int [2];
+String grade []=new String[2];
+for (int i = 0; i < 2; i++) {
+regno[i] = myscan.nextInt();
+name[i] = myscan.next();
+age[i]=myscan.nextInt();
+m1[i]= myscan.nextInt();
+m2[i]= myscan.nextInt();
+m3[i]=myscan.nextInt();
+
+if (m1[i]>0 && m2[i]>0&& m3[i]>0) {
+System.out.println("valid marks");
+sum[i]=m1[i]+m2[i]+m3[i];
+avg[i]=sum[i]/3;
+gpa[i]=avg[i]/10;
+    if(gpa[i] <=4){
+        grade[i]="F";
+    }
+    if (gpa[i]>4 && gpa[i]<=5){
+        grade[i]="D";
+    }
+    if (gpa[i]>5 && gpa[i]<=6){
+        grade[i]= "C";
+    }if (gpa[i]>6 && gpa[i]<=7.5){
+        grade[i]="B";
+    }if (gpa[i]>7.5 && gpa[i]<=9){
+        grade[i]="A";
+    }else {
+        grade[i]= "S";
+    }
+
+}else {System.out.println("Invalid marks");}}
+    for (int i = 0; i < 2; i++) {
+        System.out.println(regno[i]+" "+name[i]+" "+age[i]+" "+m1[i]+" "+m2[i]+" "+m3[i]+" "+sum[i]+" "+avg[i]+" "+gpa[i]+" "+grade[i]);
+    }
+        }
+
+
+
+
+
+ }
+
+*/
