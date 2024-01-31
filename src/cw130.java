@@ -88,7 +88,7 @@ Note : All the marks for the student is +Ve, Otherwise print "Invalid Marks"*/
 
 import java.util.Scanner;
 public class cw130 {
-    public class Stud(String name,int regno,int m1,int m2,int m3){
+    public class Stud(String name,int regno,int age,int m1,int m2,int m3){
 
         int sregno=regno;
         String sname=name;
@@ -96,8 +96,9 @@ public class cw130 {
         int mar2=m2;
         int mar3=m3;
 
-        public void avg(){
-
+        public int avg(){
+            int avg= (mar1+mar2+mar3)/3;
+            return avg;
         }
 
 
@@ -118,7 +119,9 @@ public class cw130 {
             m2[i]= myscan.nextInt();
             m3[i]=myscan.nextInt();
         }
-        Stud st1=new Stud(name[0],regno[0],m1[0],m2[0],m3[0]);
+        if (m1[0]>0 && m2[0]>0&& m3[0]>0) {
+            Stud st1 = new Stud(name[0], regno[0], m1[0], m2[0], m3[0]);
+        }else {System.out.println("Invalid marks");}
 
         }
 
