@@ -40,7 +40,7 @@ return gpa;
    return "S";
   }
  }
- public void disply(){
+ public void display(){
   System.out.println(this.regno+" "+this.name+" "+this.age+" "+this.m1+" "+this.m2+" "+this.m3+" "+(this.m1+this.m2+this.m3)+" "+this.avg()+" "+this.cgpa()+" "+this.grade());
  }
 }

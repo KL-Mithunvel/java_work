@@ -32,12 +32,14 @@ public class ips {
 
     }}
 */
+/*
 import java.util.Scanner;
 import java.lang.*;
-public class Main {
+public class ips {
     public static void main(String arr []){
         Scanner myscan=new Scanner(System.in);
         String lis []=new String[5];
+        Double price = 0.0;
         int c=0,diff=0;
         for (int i = 0; i < 2; i++) {
             lis[i]= myscan.nextLine();
@@ -54,14 +56,17 @@ public class Main {
             for(int i=0;i<2;i++){System.out.println(uni[i]);}
             System.out.println(diff);
             if (diff <500) {
-                if(diff<=100){System.out.println(String.format("%.2f",diff*1.25));}
-                else if((diff>101)&&(diff>200)){System.out.println(String.format("%.2f",diff*2.25));}
-                else if((diff>201)&&(diff>400)){System.out.println(String.format("%.2f",diff*4.5));
-                }else if((diff>401)&&(diff>500)){System.out.println(String.format("%.2f",diff*6));}
+                if(diff<=100){
+                    price =diff*1.25;}
+                else if((diff>101)&&(diff>200)){price=100*1.25+(diff-100)*2.25;}
+                else if((diff>201)&&(diff>400)){price=(100*1.25+100*2.25)+(diff-200)*4.5;
+                }else if((diff>401)&&(diff>500)){price=(100*1.25+100*2.25+200*4.5)+(diff-400)*6.0;}
             } else if (diff>500) {
-                if((diff>101)&&(diff>400)){System.out.println(String.format("%.2f",diff*4.5));}
-                else if((diff>401)&&(diff>500)){System.out.println(String.format("%.2f",diff*6));
-                }else if((diff>501)&&(diff>600)){System.out.println(String.format("%.2f",diff*8));}
-            }else {System.out.println(String.format("%.2f",diff*9));}
-        }
+                if (diff<100){price=(diff*2.25);}
+                else if((diff>101)&&(diff>400)){price=(100*2.25)+(diff-100)*4.5;}
+                else if((diff>401)&&(diff>500)){price=(100*2.25+300*4.5)+(diff-400)*6.;
+                }else if((diff>501)&&(diff>600)){price=(100*2.25+300*4.5+400*6.)+(diff-500)*8.;}
+            }else {price=(100*2.25+300*4.5+400*6.+500*8.)+(diff-600)*9.;}
+        }System.out.println(String.format("%.2f",price));
 }}
+*/
