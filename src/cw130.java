@@ -85,7 +85,7 @@ Output : Print Student_RegdNo, Student_Name, Student_Age, Student_Marks1, Studen
  Student_Total, Student_Avg, Student_CGPA, STudent_Grade. (Line by Line)
 
 Note : All the marks for the student is +Ve, Otherwise print "Invalid Marks"*/
-
+/*
 import java.util.Scanner;
 
 
@@ -128,9 +128,9 @@ st2.disply();
 
 
 
- }
+ }*/
 
-/*import java.util.Scanner;
+import java.util.Scanner;
 
 
 public class cw130{
@@ -187,4 +187,5 @@ gpa[i]=avg[i]/10;
 
  }
 
-*/
+
+
