@@ -34,10 +34,11 @@ public class Main {
         int mon = myscan.nextInt();
         int days=0;
         int year = myscan.nextInt();
-        if ((mon>=1) &&(mon <12)) {
-            days = calcNoDays(mon,year);
-            System.out.println(nameOfmon(mon)+" "+year+" has "+days+" days");
-        }else {System.out.println("Invalid Input");}
+        String txtMon=nameOfmon(mon);
+        if (txtMon=="") {System.out.println("Invalid Input");return;}
+        days = calcNoDays(mon,year);
+        System.out.println(txtMon+" "+year+" has "+days+" days");
+
     }
 
 
@@ -68,6 +69,8 @@ public class Main {
 
         }
     public static String nameOfmon(int mon){
+        if ((mon>12)||(mon<1)){return "";}
+
         String m[]={"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
         String s= m[mon-1];
         return s;
