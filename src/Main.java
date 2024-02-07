@@ -108,7 +108,7 @@ public class Main{
     }
 }
 */
-
+/*
 import java.util.Scanner;
 public class Main {
     public static void main (String arr []){
@@ -157,4 +157,4 @@ public class Main {
             pass=pass+"FE";
         }else {pass=pass+"MA";}
         return pass;}
-}
+}*/
