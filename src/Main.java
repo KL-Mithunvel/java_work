@@ -26,7 +26,7 @@ class Main{
         s1.display(); s2.display();
     }
 }*/
-
+/*
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -85,4 +85,76 @@ public class Main {
     }
 
 
+}
+*/
+
+
+
+/*import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner myscan =new Scanner(System.in);
+        int sw[][]=new int[2][2];
+        for (int i=0;i<=2;i++){
+            for (int j = 0; j <= 2; j++) {
+            sw[i][j]=myscan.nextInt();}
+        }
+    }
+    public static String klm(String abc){
+        return abc;
+    }
+    public static int add (int a,int b){
+        return a+b;
+    }
+}
+*/
+
+import java.util.Scanner;
+public class Main {
+    public static void main (String arr []){
+        int k=3,sbi=0;
+        Scanner myscan = new Scanner (System.in);
+        String peo [][]=new String[3][4];
+        String plis[]=new String [3];
+        String uslis []=new String[3];
+        for(int i=0;i<3;i++){
+            peo[i][0]=myscan.nextLine();
+            if (peo[i][0].length()!=5){
+                System.out.println("Invalid Account Number");
+            }else{
+                for (int j =1;j<4;j++){
+                    peo[i][j]=myscan.nextLine();
+                }if (peo[i][0].length()!=5){System.out.println("invalid input");}
+                else{plis[i]=pass(peo[i]);
+                    uslis[i]=user(peo[i]);}
+            }}for (int i=0;i<3;i++){
+            System.out.println(uslis[i]);
+            System.out.println(plis[i]);
+        }for (int i=0;i<3;i++){
+            if(plis[i].charAt(0)=='S'){sbi=sbi+1;
+
+            }
+        }System.out.println("INDIAN BANK:"+(k-sbi));
+        System.out.println("STATE BANK:"+sbi);
+
+    }
+    public static String user(String arr []){
+        String usid="";
+        if (arr[0].charAt(0)=='2'){
+            usid="IND"+usid;
+        }else{usid="STA";}
+        usid=usid+arr[0].substring(2,5);
+        usid=usid+arr[2].substring(arr[2].length()-2,arr[2].length()).toUpperCase();
+        return usid;
+    }
+    public static String pass(String arr[]){
+        String pass="";
+        if (arr[0].charAt(0)=='2'){
+            pass="INB"+pass;
+        }else{pass="STB"+pass;}
+        pass=pass+arr[1].substring(3,7);
+        if(arr[3].charAt(0)=='F'){
+            pass=pass+"FE";
+        }else {pass=pass+"MA";}
+        return pass;}
 }
