@@ -106,3 +106,34 @@ public class javcwlb4{
     }
 }
 */
+/*
+import java.util.*;
+public class Main
+{public static double getchangePercent( double previousClosingPrice,double currentPrice)
+{double diff=currentPrice-previousClosingPrice;
+    return diff;}
+    public Main(){
+        String stocksymbol;
+        String stockName;
+        double previousclosingPrice;
+        double currentPrice;}
+        public static void main(String args[]){
+        Scanner sc=new Scanner (System. in);
+        String stocksymbol =sc. nextLine();
+        String stockName=sc.nextLine();
+        double previousClosingPrice=sc.nextDouble();
+        double currentPrice=sc.nextDouble();
+        Main obj=new Main();
+        double CHANGE=obj.getchangePercent (previousClosingPrice, currentPrice) ;
+        if (previousClosingPrice<0.0 || currentPrice<0.0){
+            System. out . println("Invalid Price");}
+        else if (previousClosingPrice>currentPrice){
+                System. out. println ("No Change in Price");}
+            else
+                System.out . println( (int) CHANGE) ;
+            sc.close();}
+            }
+*/
+
+
+

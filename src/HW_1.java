@@ -178,7 +178,7 @@ public class HW_1{
  */
 
 //9
-/*
+
 import java.util.Scanner;
 public class HW_1 {
     public static void main(String args[]){
@@ -191,5 +191,5 @@ public class HW_1 {
         System.out.println("Area of rectangle(A): "+ A);
     }
 }
- */
+
 

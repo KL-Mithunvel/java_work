@@ -70,3 +70,12 @@ public class ips {
         }System.out.println(String.format("%.2f",price));
 }}
 */
+
+
+
+/*
+public class ips {
+    public static void main(String[] args) {
+        System.out.println("\uD83D\uDE00");
+    }
+}/*
