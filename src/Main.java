@@ -158,7 +158,7 @@ public class Main {
         }else {pass=pass+"MA";}
         return pass;}
 }*/
-
+/*
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
@@ -166,3 +166,53 @@ public class Main{
         //int mark=sc.nextLin.e();
     }
 }
+*/
+/*
+public class Main{
+    public static void main (String [] argdd){
+        person sanju =new person("sanju",12,"white");
+
+        System.out.println(sanju.age);
+        person mirfaq=new person("mirfu",17,"white");
+        sanju.sleep();
+        mirfaq.message("man");
+        student mithun = new student("mithun",20,"white","23bmh1029");
+        mithun.message();
+
+
+    }
+}class person{
+    String name;
+    int age;
+    String col;
+    public person(String na,int ag, String skin){
+        age=ag;
+        col=skin;
+        name=na;
+    }
+    public void sleep(){
+        System.out.println("zzzz");
+    }
+    public void message(String gender){
+        System.out.println("hi i am "+name+" and iam "+gender);
+    }
+}
+
+class student extends person{
+    String name;
+    int age;
+    String col;
+    String regno;
+
+
+    public student(String na, int ag, String skin,String reg) {
+        super(na, ag, skin);
+        name=na;
+        age=ag;
+        col=skin;
+        regno = reg;
+    }
+    public void message(){
+        System.out.println("hi iam " + name +" my registration number is "+regno);
+    }
+}*/
