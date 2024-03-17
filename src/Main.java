@@ -216,3 +216,7 @@ class student extends person{
         System.out.println("hi iam " + name +" my registration number is "+regno);
     }
 }*/
+public class Main{
+public static void main(String[] args) {
+
+}}
