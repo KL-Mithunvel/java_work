@@ -225,7 +225,7 @@ worker gets paid the hourly wage for the actual number of hours worked, if hours
  hierarchy inheritance program that executes these classes and methods.
  */
 
-
+/*
 public class Main{
 public static void main(String[] args) {
 
@@ -283,4 +283,85 @@ class full_W extends workers{
 
     }
 
+}*/
+/*Create a class called “HotelRoom” that includes an integer field for the room number and a double field for the nightly rental rate.
+ Include get methods for these fields and a constructor that requires an integer argument representing the room number. The constructor
+ sets the room rate based on the room number; rooms numbered 100 and below are Rs 500 per night, others are Rs.800 per night.
+Create an extended class name Suite whose constructor requires a room number and adds a Rs 400 surcharge to the regular hotel room rate
+based on the room number. Write a program to demonstrate creating and using an object of each class.
+*/
+
+public class Main {
+    public static void main(String[] args) {
+        HotelRoom room_500=new HotelRoom(500);
+        HotelRoom room_30=new HotelRoom(30);
+        suite s_480= new suite(480);
+        suite s_45= new suite(45);
+
+
+    }
 }
+class HotelRoom{
+    int room_no;
+    double price;
+public HotelRoom(int r){
+    room_no=r;
+
+}
+public void ppn(){
+    if (room_no<=100){
+        price=500;
+    }else {price=800;}
+    }
+}
+class suite extends HotelRoom{
+    public suite (int r){
+        super(r);
+    }public void ppn(){
+        if (room_no<=100){
+            price=900;
+        }else {price=1200;}
+    }
+}
+/*
+public class Main {
+    public static void main(String[] args) {
+
+    }
+}
+
+interface room{
+
+    public void area();
+    public void circumference();
+}
+class s_room implements room{
+    double side;
+    double area;
+    double circumference;
+    public s_room(double s){
+        side=s;
+    }
+    public void calc_area(){
+        area= side*side;
+    }
+    public void calc_circumference(){
+        circumference= side*4;
+    }
+}
+class r_room implements room{
+    double length;
+    double breath;
+    double area;
+    double circumference;
+    public r_room(double l,double b){
+        length=l;
+        breath=b;
+    }
+    public void calc_area(){
+        area = length *breath;
+    }
+    public void calc_circ(){
+        circumference=(2*length)+(2*breath);
+    }
+}*/
