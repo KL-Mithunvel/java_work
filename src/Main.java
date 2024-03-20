@@ -297,8 +297,10 @@ public class Main {
         HotelRoom room_30=new HotelRoom(30);
         suite s_480= new suite(480);
         suite s_45= new suite(45);
-
-
+        room_500.ppn();
+        room_30.ppn();
+        s_45.ppn();
+        s_480.ppn();
     }
 }
 class HotelRoom{
