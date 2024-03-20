@@ -334,43 +334,42 @@ class suite extends HotelRoom{
 
 public class Main {
     public static void main(String[] args) {
-
-    }
+        s_room room_4= new s_room(5);
+        r_room room_2= new r_room(3,5);
+            }
 }
 
 interface room{
 
-    public void calc_area();
-    public void calc_circ();
+    public double calc_area();
+    public double calc_circ();
 }
 class s_room implements room{
     double side;
-    double area;
-    double circumference;
+
     public s_room(double s){
         side=s;
     }
-    public void calc_area(){
-        area= side*side;
+    public double calc_area(){
+        return side*side;
     }
-    public void calc_circ(){
-        circumference= side*4;
+    public double calc_circ(){
+        return side*4;
     }
 }
 class r_room implements room{
     double length;
     double breath;
-    double area;
-    double circumference;
+
     public r_room(double l,double b){
         length=l;
         breath=b;
     }
-    public void calc_area(){
-        area = length *breath;
+    public double calc_area(){
+        return length *breath;
     }
-    public void calc_circ(){
-        circumference=(2*length)+(2*breath);
+    public double calc_circ(){
+        return (2*length)+(2*breath);
     }
 }
 
