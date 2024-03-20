@@ -331,7 +331,7 @@ class suite extends HotelRoom{
     }
 }
 */
-
+/*
 public class Main {
     public static void main(String[] args) {
         s_room room_4= new s_room(5);
@@ -372,7 +372,7 @@ class r_room implements room{
         return (2*length)+(2*breath);
     }
 }
-
+*/
 
 /*Create a class named Computer that contains data fields for processor model (for example, i3) and clock speed in
 gigahertz (for example, 3.4). Inclue a get method for each field and a constructor that requires a parameter for each field.
