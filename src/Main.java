@@ -216,7 +216,71 @@ class student extends person{
         System.out.println("hi iam " + name +" my registration number is "+regno);
     }
 }*/
+
+/* In a Chemical factory there are workers like Part-time workers and Full-Time workers. Every worker has a name,
+designation,no.of hours worked and salary . Design a method that computes the weekly pay for every worker. A Part-Time
+worker gets paid the hourly wage for the actual number of hours worked, if hours is at most 35. If the hourly worker worked
+ more than 35 hours, the excess is paid at time and a half. The Full-Time worker gets paid the hourly wage for 40 hours, no
+ matter what the actual number of hours is. Design a method that compute the total pay of any worker. Supply a Java Multilevel
+ hierarchy inheritance program that executes these classes and methods.
+ */
+
+
 public class Main{
 public static void main(String[] args) {
 
+    full_W tony =new full_W("tony","manager",40,100);
+    part_W mike =new part_W("mike","driver",30,50);
+    part_W henry=new part_W("henry","tester",40,60);
+    tony.calc_inc();
+    mike.calc_inc();
+    henry.calc_inc();
+    System.out.println(tony.income);
+    System.out.println(mike.income);
+    System.out.println(henry.income);
 }}
+abstract class workers{
+    String name;
+    String designation;
+    int num_hrs;
+    int salary;
+    public workers (String na,String desig,int hrs,int sal){
+        name = na;
+    designation = desig;
+    num_hrs= hrs;
+    salary = sal;}
+
+}
+class part_W extends workers{
+    int  income;
+    public part_W(String na,String desig,int hrs,int sal){
+        super(na,desig,hrs,sal);
+
+    }
+    public void calc_inc(){
+        if(num_hrs<=35){
+            income=(num_hrs*salary);
+
+        }
+        else{
+            int n = salary+salary/2;
+
+            income=(num_hrs*n);
+        }
+    }
+
+}
+
+
+class full_W extends workers{
+    int  income;
+    public full_W(String na,String desig,int hrs,int sal){
+        super(na,desig,hrs,sal);
+
+    }
+    public void calc_inc(){
+        income= salary * 40;
+
+    }
+
+}
