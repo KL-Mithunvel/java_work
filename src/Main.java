@@ -290,42 +290,48 @@ class full_W extends workers{
 Create an extended class name Suite whose constructor requires a room number and adds a Rs 400 surcharge to the regular hotel room rate
 based on the room number. Write a program to demonstrate creating and using an object of each class.
 */
-
+/*
 public class Main {
     public static void main(String[] args) {
         HotelRoom room_500=new HotelRoom(500);
         HotelRoom room_30=new HotelRoom(30);
         suite s_480= new suite(480);
         suite s_45= new suite(45);
-        room_500.ppn();
-        room_30.ppn();
-        s_45.ppn();
-        s_480.ppn();
+        System.out.println("Room no: " + room_500.getRoomNo() + " Rate: " + room_500.getPrice());;
+        System.out.println("Room no: " + room_30.getRoomNo() + " Rate: " + room_30.getPrice());;
+        System.out.println("Room no: " + s_45.getRoomNo() + " Rate: " + s_45.getPrice());;
+        System.out.println("Room no: " + s_480.getRoomNo() + " Rate: " + s_480.getPrice());;
     }
 }
+
 class HotelRoom{
     int room_no;
     double price;
-public HotelRoom(int r){
-    room_no=r;
-
-}
-public void ppn(){
-    if (room_no<=100){
-        price=500;
-    }else {price=800;}
+    public HotelRoom(int r){
+        room_no=r;
+        if (room_no<=100){
+            price=500;
+        }
+        else {
+            price=800;
+        }
+    }
+    public int getRoomNo(){
+        return room_no;
+    }
+    public double getPrice(){
+        return price;
     }
 }
+
 class suite extends HotelRoom{
     public suite (int r){
         super(r);
-    }public void ppn(){
-        if (room_no<=100){
-            price=900;
-        }else {price=1200;}
+        price = price + 400;
     }
 }
-/*
+*/
+
 public class Main {
     public static void main(String[] args) {
 
@@ -334,8 +340,8 @@ public class Main {
 
 interface room{
 
-    public void area();
-    public void circumference();
+    public void calc_area();
+    public void calc_circ();
 }
 class s_room implements room{
     double side;
@@ -347,7 +353,7 @@ class s_room implements room{
     public void calc_area(){
         area= side*side;
     }
-    public void calc_circumference(){
+    public void calc_circ(){
         circumference= side*4;
     }
 }
@@ -366,4 +372,13 @@ class r_room implements room{
     public void calc_circ(){
         circumference=(2*length)+(2*breath);
     }
-}*/
+}
+
+
+/*Create a class named Computer that contains data fields for processor model (for example, i3) and clock speed in
+gigahertz (for example, 3.4). Inclue a get method for each field and a constructor that requires a parameter for each field.
+Create a subclass named MultiMediaComputer that contains an additional integer field for the CD-ROM speed. The multimedia
+ class also contains a get method for the new data field and a constructor that requires arguments for each of the three fields.
+Write a JAVA program to demonstrate creating and using an object of each class.
+
+*/
