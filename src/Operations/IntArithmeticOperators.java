@@ -14,9 +14,9 @@ public class  IntArithmeticOperators {
     public int mul(int a,int b){
         return a*b;
     }
-    public int dev(int a,int b){
+    public int div(int a,int b){
         if (b==0){
-            System.out.println("Cant devide by 0");
+            System.out.println("Cant divide by 0");
             return -1;
         }else {
         return a/b;}
