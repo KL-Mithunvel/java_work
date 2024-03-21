@@ -1,13 +1,28 @@
 package Operations;
+interface AssaignmentOperators{
+    public int add(int a,int b);
+    public int  sub(int a,int b);
+    public int mul(int a,int b);
+    public int dev(int a,int b);
 
-interface ArithmeticOperators {
-    public int add() {};
 }
-
-public class  IntArithmeticOperators implements ArithmeticOperators {
+public class  IntArithmeticOperators {
     public int add(int a,int b){
         return a+b;}
     public int  sub(int a,int b){
         return a-b;}
-    public int
+    public int mul(int a,int b){
+        return a*b;
+    }
+    public int dev(int a,int b){
+        if (b==0){
+            System.out.println("Cant devide by 0");
+            return -1;
+        }else {
+        return a/b;}
+    }
+    public int mod(int a,int b){
+        return a%b;
+
+    }
      }
